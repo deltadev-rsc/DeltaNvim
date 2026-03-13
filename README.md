@@ -1,7 +1,7 @@
 # DeltaNvim
 ### моя сборка консольного редактора неовим,  для работы с языками Си, Раст, АСМ и linker script
 -----------------------------------------------------------------------------------------------
-<img src="https://github.com/deltadev-rsc/DeltaNvim/screenshots/delta-nvim-entry.jpg" width=250 />
+<img src="https://github.com/deltadev-rsc/DeltaNvim/screenshots/delta-nvim-entry.jpg" width=777 height=355 />
 
 --------------------------------------------------------------------------------------------
 
