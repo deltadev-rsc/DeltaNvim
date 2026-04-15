@@ -125,53 +125,6 @@ require("catppuccin").setup({
     }        
 })
 
-local palette = require('nordic.colors')
-
-require('nordic').setup({
-    on_palette = function(palette) end,
-    after_palette = function(palette) end,
-    on_highlight = function(highlights, _palette)
-        for _, highlight in pairs(highlights) do
-            highlight.italic = false
-        end 
-    end,
-    bold_keywords = false,
-    italic_comments = true,
-    transparent = {
-        bg = false,
-        float = false,
-    },
-    bright_border = false,
-    reduced_blue = true,
-    swap_backgrounds = false,
-    cursorline = {
-        bold = false,
-        bold_number = true,
-        theme = 'dark',
-        blend = 0.85,
-    },
-    visual = {
-        bold = false,
-        bold_number = true,
-        theme = 'dark',
-        blend = 0.85,
-    },
-    noice = {
-        -- Available styles: `classic`, `flat`.
-        style = 'flat',
-        background = "#2E344O"
-    }, 
-    telescope = {
-        style = 'flat',
-    },
-    leap = {
-        dim_backdrop = false,
-    },
-    ts_context = {
-        dark_background = true,
-    }
-})
-
 require("everforest").setup({
   background = "hard",
   transparent_background_level = 0,
@@ -192,10 +145,10 @@ require("everforest").setup({
 })
 
 require("gruvbox").setup({
-  terminal_colors = true, 
-  undercurl = true,
+  terminal_colors = false, 
+  undercurl = false,
   underline = true,
-  bold = true,
+  bold = false,
   italic = {
     strings = true,
     emphasis = true,
@@ -203,18 +156,17 @@ require("gruvbox").setup({
     operators = false,
     folds = true,
   },
-  strikethrough = true,
+  strikethrough = false,
   invert_selection = false,
   invert_signs = false,
   invert_tabline = false,
-  inverse = true, 
-  contrast = "hard", 
+  inverse = false, 
+  contrast = "medium", 
   palette_overrides = {},
   overrides = {},
   dim_inactive = false,
-  transparent_mode = false,
+  transparent_mode = true,
 })
-
 require('kanagawa').setup({
     compile = false,             -- enable compiling the colorscheme
     undercurl = true,            -- enable undercurls
@@ -245,5 +197,4 @@ vim.cmd.colorscheme "catppuccin"
 vim.cmd([[colorscheme gruvbox]])
 vim.cmd([[colorscheme everforest]])
 vim.cmd([[colorscheme nordic]])
-vim.cmd([[colorscheme ayu-mirage]])
 vim.o.background = "dark"
