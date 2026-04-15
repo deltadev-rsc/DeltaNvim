@@ -47,12 +47,12 @@ require("neo-tree").setup({
       expander_highlight = "NeoTreeExpander",
     },
     icon = {
-      folder_closed = "",
-      folder_open = "",
+      folder_closed = "",--"",
+      folder_open = "",
       folder_library = "",
       folder_active = "",
       new_folder = "",
-      root_folder = "",
+      root_folder = "󰉐",
       folder_empty = "󰜌",
       provider = function(icon, node, state) -- default icon provider utilizes nvim-web-devicons if available
         if node.type == "file" or node.type == "terminal" then
@@ -217,7 +217,8 @@ require("neo-tree").setup({
       ignore_files = {
         ".neotreeignore",
         ".ignore",
-        -- ".rgignore"
+        ".rgignore",
+        ".gitignore"
       },
       hide_hidden = false, -- only works on Windows for hidden files/directories
       hide_by_name = {
