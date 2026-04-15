@@ -58,10 +58,10 @@ require("lazy").setup({
     { "catppuccin/nvim", name = "catppuccin", },
     { "ellisonleao/gruvbox.nvim", name = "gruvbox" },
     { "neanias/everforest-nvim", version = false, name = "everforest" },
-    { "AlexvZyl/nordic.nvim", priority = 1000 },
-    { "Shatur/neovim-ayu" },
+    { "AlexvZyl/nordic.nvim" },
     { "rebelot/kanagawa.nvim" },
     { "folke/tokyonight.nvim" },
+    { "shaunsingh/nord.nvim" },
 
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/cmp-buffer' },
@@ -77,7 +77,27 @@ require("lazy").setup({
 
     { 'zaldih/themery.nvim' },
 
+    { 'nvim-mini/mini.map', version = '*',
+         integrations = nil,
+
+        symbols = {
+            encode = nil,
+            scroll_line = '█',
+            scroll_view = '┃',
+        },
+        window = {
+            focusable = false,
+            side = 'right',
+            show_integration_count = true,
+            width = 10,
+            winblend = 25,
+            zindex = 10,
+        },
+    },
+
     {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
+
+--    { 'tribela/vim-transparent' },
 
     {
         'nvim-lualine/lualine.nvim',
