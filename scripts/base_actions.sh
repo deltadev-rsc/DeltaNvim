@@ -6,11 +6,11 @@ NVIM_CONF_FROM_REPO="~/DeltaNvim/.config/nvim"
 
 function base_actions() {
     while true; do
-        echo "вы установили зависимости ?"
+        echo "вы установили nvim ?"
         echo "(y/n)"
-        read -r isdeps
+        read -r isnvim
 
-        if [ "$isdeps" == "y" ]; then
+        if [ "$isnvim" == "y" ]; then
             echo "тогда приступим к остальным действиям"
             echo "проверка на наличие директории ~/.config/nvim"
             
@@ -26,6 +26,9 @@ function base_actions() {
                 echo "просто создай её по команде 'mkdir ~/.config/nvim' "
                 exit 1
             fi
+        elif [ "$isnvim" == "n" ]; then
+            echo "так поставь ёптить!"
+            break
         fi
     done
 }
