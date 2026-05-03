@@ -2,7 +2,7 @@
 
 NVIM_CONF="~/.config/nvim"
 NVIM_CONF_BACKUP="~/.config/nvim/backup"
-NVIM_CONF_FROM_REPO="~/DeltaNvim/.config/nvim"
+NVIM_CONF_FROM_REPO="~/DeltaNvim/.config/nvim/src/"
 
 function base_actions() {
     while true; do
