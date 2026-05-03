@@ -3,8 +3,7 @@ local mocha = require("catppuccin.palettes").get_palette "mocha"
 
 require('bufferline').setup{
     options = {
-        separator_style = "slope",
-        custom_separator_style = {"", ""},
+        separator_style = "slope", -- { '', '' },
         custom_filter = function(buf_number)
         if vim.bo[buf_number].filetype ~= "neo-tree" then
             return true
@@ -33,7 +32,8 @@ require('bufferline').setup{
             latte = {
                 background = { fg = "#000000" },
             },
-            separator_style = {"", ""}
         },
+
+        separator_style = { '', '' },
     },
 }
