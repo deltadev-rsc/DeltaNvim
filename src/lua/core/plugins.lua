@@ -54,13 +54,14 @@ require("lazy").setup({
         } 
     },
 
-  -- themes
+    -- themes
     { "catppuccin/nvim", name = "catppuccin", },
     { "ellisonleao/gruvbox.nvim", name = "gruvbox" },
     { "neanias/everforest-nvim", version = false, name = "everforest" },
     { "AlexvZyl/nordic.nvim" },
     { "rebelot/kanagawa.nvim" },
     { "folke/tokyonight.nvim" },
+    { "f4z3r/gruvbox-material.nvim" },
 
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/cmp-buffer' },
