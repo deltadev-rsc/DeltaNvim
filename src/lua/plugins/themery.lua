@@ -1,7 +1,7 @@
 require("themery").setup({
     themes = {
         "catppuccin-nvim", -- "catppuccin-mocha", 
-        "gruvbox",
+        "gruvbox-material",
         "everforest",
         "nordic",
         "tokyonight-night",
