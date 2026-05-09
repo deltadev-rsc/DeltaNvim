@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	{ 'phaazon/hop.nvim' }, 
+	{ 'smoka7/hop.nvim' }, 
     {
 	    "nvim-neo-tree/neo-tree.nvim",
 	    branch = "v2.x",
@@ -78,7 +78,7 @@ require("lazy").setup({
     { 'zaldih/themery.nvim' },
 
     { 'nvim-mini/mini.map', version = '*',
-         integrations = nil,
+        integrations = nil,
 
         symbols = {
             encode = nil,
