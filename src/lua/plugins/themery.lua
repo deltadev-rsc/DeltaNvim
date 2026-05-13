@@ -1,10 +1,10 @@
 require("themery").setup({
     themes = {
-        "catppuccin-nvim", -- "catppuccin-mocha", 
+        "catppuccin-mocha", -- "catppuccin-mocha", 
+        "tokyonight-night",
         "gruvbox-material",
         "everforest",
         "nordic",
-        "tokyonight-night",
         "kanagawa-wave",
     }, 
     livePreview = true, 
