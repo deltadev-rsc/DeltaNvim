@@ -25,23 +25,32 @@ require("lazy").setup({
     { 'nvim-treesitter/nvim-treesitter', branch = 'master', lazy = false, build = ":TSUpdate"},
     { 'airblade/vim-gitgutter' },
     { 'neovim/nvim-lspconfig' },
+--    {
+--        'dmtrKovalenko/fff.nvim',
+--        build = function()
+--        require("fff.download").download_or_build_binary() end,
+--        opts = { 
+--            debug = {
+--                enabled = true,     
+--                show_scores = true, 
+--            },
+--        },
+--        lazy = false,
+--        keys = {
+--            {
+--                "ff", 
+--                function() require('fff').find_files() end,
+--                desc = 'FFFind files',
+--            }
+--        }
+--   },
+
     {
-        'dmtrKovalenko/fff.nvim',
-        build = function()
-        require("fff.download").download_or_build_binary() end,
-        opts = { 
-            debug = {
-                enabled = true,     
-                show_scores = true, 
-            },
-        },
-        lazy = false,
-        keys = {
-            {
-                "ff", 
-                function() require('fff').find_files() end,
-                desc = 'FFFind files',
-            }
+       'nvim-telescope/telescope.nvim', version = '*',
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+            -- optional but recommended
+            { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
         }
     },
 
