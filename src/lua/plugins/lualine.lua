@@ -35,10 +35,17 @@ require('lualine').setup {
       },
     }
   },
-  sections = {
+    sections = {
     lualine_a = {logo, 'mode'},
     lualine_b = {'branch', 'diff', 'diagnostics'},
-    lualine_c = {'filename'},
+    lualine_c = {'filename', {
+        function()
+            local cwd vim.fn.fnamemodify(vim.fn.getcwd(), ':t')
+            return ' ' .. cwd
+        end,
+
+        icon = ''
+    }},
     lualine_x = {'encoding', 'fileformat', 'filetype'},
     lualine_y = {'progress'},
     lualine_z = {'location'}
