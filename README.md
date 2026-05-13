@@ -2,24 +2,9 @@
 ### моя сборка консольного редактора неовим,  для работы с языками Си, Раст, АСМ и linker script
 -----------------------------------------------------------------------------------------------
 
-<!---
-<table width="100%">
-  <tr>
-    <th>Entry before update logo</th>
-    <th>Entry after update logo</th>
-  </tr>
-  <tr> 
-    <td width="50%"> 
-      <img src="https://github.com/deltadev-rsc/DeltaNvim/screenshots/delta-nvim-entry.jpg" width=750 height=355/>
-    </td>
-    <td>
-      <img src="https://gituhb.com/deltadev-rsc/DeltaNvim/screenshots/new-delta-nvim-entry.png" width=750 height=355/>
-    </td>
-  </tr>
+# Nvim Entry
+![Entry](./screenshots/dltnv.png)
 
-</table>
-
---->
 
 # Версия неовима: v0.12.1
 
