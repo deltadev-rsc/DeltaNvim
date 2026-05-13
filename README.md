@@ -3,8 +3,12 @@
 -----------------------------------------------------------------------------------------------
 
 # Nvim Entry
+
+## Tokyonight
 ![Entry](./screenshots/dltnv.png)
 
+## Catppuccin
+![EntryC](./screenshots/new-delta-nvim-entry.png)
 
 # Версия неовима: v0.12.1
 
