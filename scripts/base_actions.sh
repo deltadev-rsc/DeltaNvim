@@ -4,7 +4,7 @@ NVIM_CONF="~/.config/nvim"
 NVIM_CONF_BACKUP="~/.config/nvim/backup"
 NVIM_CONF_FROM_REPO="~/DeltaNvim/.config/nvim/src/"
 
-function base_actions() {
+function base_actions {
     while true; do
         echo "вы установили nvim ?"
         echo "(y/n)"
@@ -32,3 +32,5 @@ function base_actions() {
         fi
     done
 }
+
+base_actions
