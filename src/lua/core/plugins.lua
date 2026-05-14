@@ -88,23 +88,7 @@ require("lazy").setup({
 
     { 'zaldih/themery.nvim' },
 
-    { 'nvim-mini/mini.map', version = '*',
-        integrations = nil,
-
-        symbols = {
-            encode = nil,
-            scroll_line = '█',
-            scroll_view = '┃',
-        },
-        window = {
-            focusable = false,
-            side = 'right',
-            show_integration_count = true,
-            width = 10,
-            winblend = 25,
-            zindex = 10,
-        },
-    },
+    { 'nvim-mini/mini.map', version = '*' },
 
     {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
 
