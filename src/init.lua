@@ -1,5 +1,6 @@
 -- автозапуск lsp для clangd и rust-analyzer
 vim.cmd("lua vim.lsp.enable('clangd')")
+-- vim.cmd("lua vim.lsp.enable('asm-lsp')") -- ловушка джокера
 vim.cmd("lua vim.lsp.enable('rust_analyzer')")
 vim.cmd("lua vim.lsp.enable('bash-language-server')")
 
@@ -23,3 +24,4 @@ require('plugins.icons')
 require('plugins.lsp')
 --require('plugins.fff')
 require('plugins.telescope')
+require('plugins.minimap')
