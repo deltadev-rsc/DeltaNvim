@@ -125,6 +125,21 @@ require("catppuccin").setup({
     }        
 })
 
+require("cyberdream").setup({
+    variant = "default",
+    transparent = false,
+    saturation = 1,
+    italic_comments = true,
+    hide_fillchars = false,
+    borderless_pickers = false,
+    terminal_colors = true,
+    cache = false,
+    extensions = {
+        telescope = true,
+        mini = true,
+    }
+})
+
 require('nordic').setup({
     on_palette = function(palette) end,
     after_palette = function(palette) end,
