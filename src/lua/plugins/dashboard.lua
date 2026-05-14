@@ -2,27 +2,63 @@ require('dashboard').setup {
     theme = 'hyper',
     config = {
         header = {
-            '',
-            '    ███            ███████        ',
-            '   ███ ███        ███    ███      ',
-            '   ███  ███       ███     ███     ',
-            '   ███   ███      ███      ███    ',
-            '   ███    ███     ███       ███   ',
-            '   ███     ███    ███        ███  ',
-            '   ███      ███   ███        ███  ',
-            '   ███       ███  ███        ███  ',
-            '   ███        ███ ███        ███  ',
-            '   ███         ██████       ███   ',
-            '    ██           ███ ████████       ',
-            '',
-        },        
+                '',
+                '     ███            ██ ████████    ',
+                '   ██ ████         ███       ███   ',
+                '   ███  ███        ███       ███   ',
+                '   ███   ███       ███        ███  ',
+                '   ███    ███      ███        ███  ',
+                '   ███     ███     ███        ███  ',
+                '   ███      ███    ███        ███  ',
+                '   ███       ███   ███        ███  ',
+                '   ███        ███  ███        ███  ',
+                '   ███         ███ ███       ███   ',
+                '    ██          ███ ██ ████████    ',
+                '',
+                '     Welcome to the DeltaNvim!    ',
+                '',
+        },
         shortcut = {
-            { desc = '  New File', group = 'Label', action = 'enew', key = 'n' },
-            { desc = '  Terminal', group = 'Label', action = 'ToggleTerm direction=float', key= 't' },
-            { desc = '  Files', group = 'Label', action = 'FFFFind', key = 'f' },
-            { desc = ' 󰈆 Quit', group = 'Label', action = 'qa', key = 'q' },
+            { 
+                desc = '  New File', 
+                group = 'Label', 
+                action = 'enew', 
+                key = 'n' 
+            },
+            
+            { 
+                desc = '  Terminal', 
+                group = 'Label', 
+                action = 'ToggleTerm direction=float', 
+                key= 't' 
+            },
+
+            { 
+                desc = '  Files', 
+                group = 'Label', 
+                action = 'Telescope find_files', 
+                key = 'f' 
+            },
+            
+            { 
+                desc = ' 󰈆 Quit', 
+                group = 'Label', 
+                action = 'qa', 
+                key = 'q' 
+            },
+            
+            { 
+                desc = ' 󰊢 Git Commits ', 
+                group = 'Label', 
+                action = 'Telescope git_commits', 
+                key = 'c' 
+            },
         },
         footer = {},
+    },
+
+    highlight = {
+        DashboardHeader = "#A6E3A1"
     },
 
     hide = {
