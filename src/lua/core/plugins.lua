@@ -71,6 +71,8 @@ require("lazy").setup({
     { "rebelot/kanagawa.nvim" },
     { "folke/tokyonight.nvim" },
     { "f4z3r/gruvbox-material.nvim" },
+    { "scottmckendry/cyberdream.nvim" },
+    { "wtfox/jellybeans.nvim" },
 
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/cmp-buffer' },
