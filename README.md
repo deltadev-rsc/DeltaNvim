@@ -5,10 +5,7 @@
 # Nvim Entry
 
 ## Tokyonight
-![Entry](./screenshots/dltnv.png)
-
-### Dashboard doom theme (added int 09:44 13.05.2026)
-![dd](./screenshots/dashboard-doom.png)
+![dd](./screenshots/logo-14_05.png)
 
 ## Catppuccin
 ![EntryC](./screenshots/new-delta-nvim-entry.png)
