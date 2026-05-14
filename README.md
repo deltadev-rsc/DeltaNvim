@@ -8,7 +8,7 @@
 ![dd](./screenshots/logo-14_05.png)
 
 ## Catppuccin
-![EntryC](./screenshots/new-delta-nvim-entry.png)
+![EntryC](./screenshots/catp_entry.png)
 
 # Версия неовима: v0.12.1
 
