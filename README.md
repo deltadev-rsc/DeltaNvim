@@ -7,6 +7,10 @@
 ## Tokyonight
 ![dd](./screenshots/logo-14_05.png)
 
+## Kanagawa Wave
+
+![sfsdf](./screenshots/kanagawa-entry.png)
+
 ## Catppuccin
 ![EntryC](./screenshots/catp_entry.png)
 
