@@ -25,25 +25,6 @@ require("lazy").setup({
     { 'nvim-treesitter/nvim-treesitter', branch = 'master', lazy = false, build = ":TSUpdate"},
     { 'airblade/vim-gitgutter' },
     { 'neovim/nvim-lspconfig' },
---    {
---        'dmtrKovalenko/fff.nvim',
---        build = function()
---        require("fff.download").download_or_build_binary() end,
---        opts = { 
---            debug = {
---                enabled = true,     
---                show_scores = true, 
---            },
---        },
---        lazy = false,
---        keys = {
---            {
---                "ff", 
---                function() require('fff').find_files() end,
---                desc = 'FFFind files',
---            }
---        }
---   },
 
     {
        'nvim-telescope/telescope.nvim', version = '*',
@@ -71,8 +52,16 @@ require("lazy").setup({
     { "rebelot/kanagawa.nvim" },
     { "folke/tokyonight.nvim" },
     { "f4z3r/gruvbox-material.nvim" },
-    { "scottmckendry/cyberdream.nvim" },
-    { "wtfox/jellybeans.nvim" },
+    { 
+        "navarasu/onedark.nvim",
+        config = function()
+            require('onedark').setup {
+                style = 'dark' -- 'darker'
+            }
+
+            require('onedark').load()
+        end
+    },
 
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/cmp-buffer' },
