@@ -64,11 +64,29 @@ require'nvim-web-devicons'.setup {
         },
 
         ["asm"] = {
-            icon = " ",
-            color = "#89B4FA",
+            icon = " ",
+            color = "#FAB387",
             name = "Asm"
         },
-    
+        
+        ["f"] = {
+            icon = " ",
+            color = "#cba6f7",
+            name = "Fortarn"
+        },
+
+        ["for"] = {
+            icon = " ",
+            color = "#cba6f7",
+            name = "Fortarn"
+        },
+
+        ["f95"] = {
+            icon = " ",
+            color = "#cba6f7",
+            name = "Fortarn"
+        },
+
         ["ld"] = {
             icon = " ",
             color = "#f2cdcd",
@@ -93,7 +111,7 @@ require'nvim-web-devicons'.setup {
         },
     
         ["cpp"] = {
-            icon = " ",
+            icon = "",
             color = "#74c7ec",
             name = "Cpp"
         },
