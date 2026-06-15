@@ -30,4 +30,4 @@ require('plugins.icons')
 require('plugins.lsp')
 require('plugins.telescope')
 require('plugins.minimap')
-require('plugins.toggleterm')
+require('plugins.tog
