@@ -55,12 +55,17 @@ require("catppuccin").setup({
     color_overrides = {},
     custom_highlights = function(colors)
         return {
-		    Normal =        { bg = "#181825" },
-        	NormalFloat =   { bg = "#181825" },
-            CmpBorder =     { fg = "#cdd6f4", bg = "#1f1f2e" },
 	        TabLineSel =    { bg = colors.flamingo }
         }
     end,
+    highlight_overrides = {
+        mocha = function(mocha) 
+            return {
+                Normal = { bg = mocha.mantle },
+                NormalFloat = { bg = mocha.mantle },
+            }
+        end 
+    },
     default_integrations = true,
     auto_integrations = false,
     integrations = {
