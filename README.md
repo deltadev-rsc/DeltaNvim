@@ -7,6 +7,9 @@
 ## Tokyonight
 ![dd](./screenshots/logo-14_05.png)
 
+## Gruvbox-Material
+![ge](./screenshots/gruv-entry.png)
+
 ## Kanagawa Wave
 
 ![sfsdf](./screenshots/kanagawa-entry.png)
