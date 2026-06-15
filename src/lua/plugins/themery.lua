@@ -3,6 +3,7 @@ require("themery").setup({
         "catppuccin-mocha", -- "catppuccin-mocha", 
         "tokyonight-night",
         "gruvbox-material",
+        "gruvbox",
         "everforest",
         "nordic",
         "kanagawa-wave",
