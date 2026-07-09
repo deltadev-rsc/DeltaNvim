@@ -1,6 +1,6 @@
 vim.lsp.set_log_level("debug")
 
-vim.lsp.config('rust_analyzer', {
+vim.lsp.config('rust-analyzer', {
     settings = {
         ['rust-analyzer'] = {},
     },
@@ -12,7 +12,7 @@ vim.lsp.config('rust_analyzer', {
             }
         }
     },
-    cmd = { "rust_analyzer" },
+    cmd = { "rust-analyzer" },
     filetypes = { "rs" }
 })
 
@@ -53,4 +53,9 @@ vim.lsp.config('clangd', {
 vim.lsp.config('bash-language-server', {
     cmd = { 'bash-language-server', 'start' },
     filetypes = { 'bash', 'sh' },
+})
+
+vim.lsp.config('lua-language-server', {
+    cmd = { 'lua-language-server' },
+    filetypes = { 'lua' },
 })
