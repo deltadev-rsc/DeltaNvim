@@ -4,6 +4,19 @@ cmp.setup({
     snippet = {
         expand = function(args)
             vim.fn["vsnip#anonymous"](args.body) 
+            require('luasnip').lsp_expand(args.body)
+            require('snippy').expand_snippet(args.body)
+            vim.fn["UltiSnips#Anon"](args.body)
+            vim.snippet.expand(args.body)
+
+            local insert = MiniSnippets.config.expand.insert or MiniSnippets.default_insert
+            insert({ body = args.body }) 
+            cmp.resubscribe({ 
+                "TextChangedI", 
+                "TextChangedP" 
+            })
+
+            require("cmp.config").set_onetime({ sources = {} })
         end,
     },
     
@@ -26,4 +39,22 @@ cmp.setup({
         }, {
         { name = 'buffer' },
     })
+})
+
+cmp.setup.cmdline({ '/', '?' }, {
+    mapping = cmp.mapping.preset.cmdline(),
+    source = {
+        { name = 'buffer' }
+    }
+})
+
+cmp.setup.cmdline(':', {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = cmp.config.sources({
+        { name = 'path' }
+        }, {
+        { name = 'cmdline' }
+    }),
+
+    matching = { disallow_symbol_nonprefix_matching = false }
 })
