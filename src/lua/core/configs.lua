@@ -13,7 +13,7 @@ vim.opt.wrap = false
 vim.wo.linebreak = true
 vim.opt.virtualedit = "block"
 vim.opt.undofile = true
-vim.opt.shell = "/usr/bin/fish"
+vim.opt.shell = "/usr/bin/fish" -- "/usr/bin/zsh" or "/usr/bin/bash"
 
 vim.opt.mouse = "a"
 vim.opt.mousefocus = true
