@@ -56,12 +56,14 @@ require("lazy").setup({
         "navarasu/onedark.nvim",
         config = function()
             require('onedark').setup {
-                style = 'dark' -- 'darker'
+                style = 'darker'
             }
 
             require('onedark').load()
         end
     },
+    { "olimorris/onedarkpro.nvim" },
+    { 'Mofiqul/dracula.nvim', lazy = false },
 
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/cmp-buffer' },
