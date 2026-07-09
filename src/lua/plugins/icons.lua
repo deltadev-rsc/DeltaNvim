@@ -120,7 +120,37 @@ require'nvim-web-devicons'.setup {
             icon = " ",
             color = "#96C465",
             name = "VimL"
-        }
+        },
+
+        ["ts"] = {
+            icon = " ",
+            color = "#74c7ec",
+            name = "TypeScript"
+        },
+
+        ["js"] = {
+            icon = " ",
+            color = "#f9e2af",
+            name = "JavaScript"
+        },
+
+        ["css"] = {
+            icon = " ",
+            color = "#cba6f7",
+            name = "CSS"
+        },
+
+        ["hmtl"] = {
+            icon = " ",
+            color = "#fab387",
+            name = "HTML"
+        },
+
+        ["go"] = {
+            icon = "󰟓 ",
+            color = "#74c7ec",
+            name = "GoLang"
+        },
     };
 
     override_by_operating_system = {
