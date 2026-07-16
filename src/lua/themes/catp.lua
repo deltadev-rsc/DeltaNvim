@@ -58,14 +58,15 @@ require("catppuccin").setup({
 	        TabLineSel =    { bg = colors.flamingo }
         }
     end,
-    highlight_overrides = {
-        mocha = function(mocha) 
-            return {
-                Normal = { bg = mocha.mantle },
-                NormalFloat = { bg = mocha.mantle },
-            }
-        end 
-    },
+    -- highlight_overrides = {
+    --    mocha = function(mocha) 
+    --        return {
+    --            Normal = { bg = mocha.mantle },
+    --            NormalFloat = { bg = mocha.mantle },
+    --            NvimTree = { bg = mocha.mantle }
+    --        }
+    --    end 
+    --},
     default_integrations = true,
     auto_integrations = false,
     integrations = {
