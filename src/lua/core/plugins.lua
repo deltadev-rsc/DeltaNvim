@@ -64,6 +64,7 @@ require("lazy").setup({
     },
     { "olimorris/onedarkpro.nvim" },
     { 'Mofiqul/dracula.nvim', lazy = false },
+    { "rose-pine/neovim", name = "rose-pine" },
 
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/cmp-buffer' },
