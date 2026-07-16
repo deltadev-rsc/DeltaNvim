@@ -4,6 +4,7 @@ require("themery").setup({
         "tokyonight-night",
         "dracula",
         "onedark_dark",
+        "rose-pine",
         "gruvbox-material",
         "gruvbox",
         "everforest",
