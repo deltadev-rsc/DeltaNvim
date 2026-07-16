@@ -17,6 +17,7 @@ require('themes.gruv')
 require('themes.everf')
 require('themes.nordic')
 require('themes.dracula')
+require('themes.rose-pine')
 
 -- плагины
 require('plugins.neotree')
