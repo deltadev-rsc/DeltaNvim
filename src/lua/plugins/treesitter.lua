@@ -7,7 +7,8 @@ ts.setup {
         'make', 
         'rust', 
         'bash', 
-        'nasm' 
+        'nasm',
+        'fortran'
     }, 
     
     auto_install = true,
