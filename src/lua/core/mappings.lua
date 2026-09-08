@@ -29,4 +29,4 @@ vim.keymap.set({'n', 'v'}, '<A-x>', 'dd',           { noremap = true, silent = t
 vim.keymap.set({'n', 'i'}, '<A-z>', 'u',            { noremap = true, silent = true })
 vim.keymap.set('n', '<A-w>', ':q<CR>',              { noremap = true, silent = true })
 vim.keymap.set('i', '<A-w>', '<Esc>:q<CR>',         { noremap = true, silent = true })
-vim.keymap.set({'n', 'i'}, '<A-e>', '<Esc>:q<CR>',  { noremap = true, silent = true })
+vim.keymap.set({'n', 'i'}, '<A-q>', '<Esc>:q<CR>',  { noremap = true, silent = true })
