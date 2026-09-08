@@ -62,7 +62,6 @@ require("lazy").setup({
             require('onedark').load()
         end
     },
-    { "olimorris/onedarkpro.nvim" },
     { 'Mofiqul/dracula.nvim', lazy = false },
     { "rose-pine/neovim", name = "rose-pine" },
 
