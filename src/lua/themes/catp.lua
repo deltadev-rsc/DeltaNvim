@@ -69,14 +69,15 @@ require("catppuccin").setup({
     --},
     default_integrations = true,
     auto_integrations = false,
-    integrations = {
+	integrations = {
         cmp = true,
         gitsigns = true,
         gitgutter = true,
         nvimtree = true,
         neotree = true,
         dashboard = true,
-        notify = false,
+        notify = true,
+        telescope = true,
         mini = {
             enabled = true,
             indentscope_color = "",
@@ -98,7 +99,7 @@ require("catppuccin").setup({
                 }
             },
         },
-    }        
+    }          
 })
 
 vim.cmd([[colorscheme catppuccin]])
