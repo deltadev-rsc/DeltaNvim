@@ -14,15 +14,22 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	{ 'smoka7/hop.nvim' }, 
     {
-	    "nvim-neo-tree/neo-tree.nvim",
+	    'nvim-neo-tree/neo-tree.nvim',
 	    branch = "v2.x",
 	    dependencies = {
-		    "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons",
-		    "MunifTanjim/nui.nvim", "s1n7ax/nvim-window-picker"
+		    'nvim-lua/plenary.nvim', 
+            'nvim-tree/nvim-web-devicons',
+		    'MunifTanjim/nui.nvim', 
+            's1n7ax/nvim-window-picker'
 	    }
     },
     { 'akinsho/toggleterm.nvim', version = "*", config = true },
-    { 'nvim-treesitter/nvim-treesitter', branch = 'master', lazy = false, build = ":TSUpdate"},
+    { 
+        'nvim-treesitter/nvim-treesitter', 
+        branch = 'master', 
+        lazy = false, 
+        build = ":TSUpdate"
+    },
     { 'airblade/vim-gitgutter' },
     { 'neovim/nvim-lspconfig' },
 
@@ -31,13 +38,26 @@ require("lazy").setup({
         dependencies = {
             'nvim-lua/plenary.nvim',
             -- optional but recommended
-            { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+            { 
+                'nvim-telescope/telescope-fzf-native.nvim', 
+                build = 'make' 
+            },
         }
     },
 
+    { 
+        'utilyre/barbecue.nvim', 
+        name = "barbecue",
+        version = "*",
+        dependencies = {
+            'SmiteshP/nvim-navic',
+            'nvim-tree/nvim-web-devicons',
+        },
+    },
+
     -- debug
-    { "mfussenegger/nvim-dap"},
-    { "rcarriga/nvim-dap-ui", 
+    { 'mfussenegger/nvim-dap'},
+    { 'rcarriga/nvim-dap-ui', 
         dependencies = {
             "mfussenegger/nvim-dap", 
             "nvim-neotest/nvim-nio"
@@ -45,15 +65,15 @@ require("lazy").setup({
     },
 
     -- themes
-    { "catppuccin/nvim", name = "catppuccin", },
-    { "ellisonleao/gruvbox.nvim", name = "gruvbox" },
-    { "neanias/everforest-nvim", version = false, name = "everforest" },
-    { "AlexvZyl/nordic.nvim" },
-    { "rebelot/kanagawa.nvim" },
-    { "folke/tokyonight.nvim" },
-    { "f4z3r/gruvbox-material.nvim" },
+    { 'catppuccin/nvim',          name = "catppuccin", },
+    { 'ellisonleao/gruvbox.nvim', name = "gruvbox" },
+    { 'neanias/everforest-nvim',  version = false, name = "everforest" },
+    { 'AlexvZyl/nordic.nvim'  },
+    { 'rebelot/kanagawa.nvim' },
+    { 'folke/tokyonight.nvim' },
+    { 'f4z3r/gruvbox-material.nvim' },
     { 
-        "navarasu/onedark.nvim",
+        'navarasu/onedark.nvim',
         config = function()
             require('onedark').setup {
                 style = 'darker'
@@ -62,26 +82,28 @@ require("lazy").setup({
             require('onedark').load()
         end
     },
-    { 'Mofiqul/dracula.nvim', lazy = false },
-    { "rose-pine/neovim", name = "rose-pine" },
+    { "Mofiqul/dracula.nvim", lazy = false },
+    { 'rose-pine/neovim',     name = "rose-pine", lazy = false },
 
     { 'hrsh7th/cmp-nvim-lsp' },
-    { 'hrsh7th/cmp-buffer' },
-    { 'hrsh7th/cmp-path' },
-    { 'hrsh7th/cmp-cmdline' },
-    { 'hrsh7th/nvim-cmp' },
-    { 'sharkdp/fd' },
+    { 'hrsh7th/cmp-buffer'   },
+    { 'hrsh7th/cmp-path'     },
+    { 'hrsh7th/cmp-cmdline'  },
+    { 'hrsh7th/nvim-cmp'     },
+    { 'sharkdp/fd'           },
 
     { 
-        "williamboman/mason.nvim",
+        'williamboman/mason.nvim',
         build = ":MasonUpdate"
     },
 
     { 'zaldih/themery.nvim' },
-
     { 'nvim-mini/mini.map', version = '*' },
-
-    {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
+    {
+        'akinsho/bufferline.nvim', 
+        version = "*", 
+        dependencies = 'nvim-tree/nvim-web-devicons'
+    },
 
 --    { 'tribela/vim-transparent' },
 
